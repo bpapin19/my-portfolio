@@ -61,9 +61,9 @@ export default function NavBar() {
                 />
             </div>
         <div className="tooltip">
-            <span className="tooltiptext">Facebook</span>
+            <span className="tooltiptext">YouTube</span>
             <SocialIcon
-                url="https://www.facebook.com/brandon.papin.3/"
+                url="https://www.youtube.com/channel/UCjZoqyUwmK7mCnN24L26ftw"
                 classname="mr-4"
                 target="_blank"
                 fgColor="#fff"
