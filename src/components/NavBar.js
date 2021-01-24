@@ -9,7 +9,7 @@ export default function NavBar() {
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
-            to="/portfolio"
+            to="/"
             exact
             activeClassName="text-white"
             className="inflex-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-white text-4xl font-bold"
@@ -18,21 +18,21 @@ export default function NavBar() {
             <div className="inflex-flex items-center text-white text-sm font-bold">Web Developer Student</div>
           </NavLink>
           <NavLink
-            to="/portfolio/project"
+            to="/project"
             activeClassName="text-blue-100 bg-blue-700"
             className="inflex-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-white"
           >
             Projects
           </NavLink>
           <NavLink
-            to="/portfolio/about"
+            to="/about"
             activeClassName="text-blue-100 bg-blue-700"
             className="inflex-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-white"
           >
             About Me
           </NavLink>
           <NavLink
-            to="/portfolio/contact"
+            to="/contact"
             activeClassName="text-blue-100 bg-blue-700"
             className="inflex-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-white"
           >
