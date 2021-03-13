@@ -13,9 +13,6 @@ export default function NavBar() {
       <div className="container mx-auto flex">
         <div className="container mx-auto flex justify-between">
         <nav className="flex">
-          <NavLink to="/">
-          
-          </NavLink>
           <NavLink
             to="/"
             exact

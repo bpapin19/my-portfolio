@@ -1,9 +1,7 @@
 import React from "react";
 import image from "../cityscape.jpg";
-import background from "../background.jpg"
 import "./page.css";
 import $ from "jquery";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFileCode } from 'react-icons/fa';
 import { FaLaptopCode } from 'react-icons/fa';
 import { FaClipboardCheck } from 'react-icons/fa';
@@ -39,7 +37,7 @@ export default function Home() {
                         </h1>
                         <div>
                             <p className="text-blue-100 text-med text-center">
-                                I enjoy using my skills to program web applications and learn new techniques along the way.
+                                My passion is programming web applications and learning new techniques along the way.
                             </p>
                             <div className="ul-container">
                                 <ul className="text-blue-100 text-med text-center pt-10">
@@ -66,7 +64,7 @@ export default function Home() {
                             </h1>
                             <div>
                                 <p className="text-blue-100 text-med text-center">
-                                    I expect to graduate with a bachelor's degree in Computer Science in Fall 2021. 
+                                    I will be graduating with a bachelor's degree in Computer Science in Fall 2021. 
                                 </p>
                                 <div className="ul-container">
                                     <ul className="text-white text-med text-center pt-10">
@@ -93,7 +91,7 @@ export default function Home() {
                         </h1>
                         <div>
                             <p className="text-blue-100 text-med text-center">
-                                I have experience working on our production and dev team at HyreCar, Inc.
+                                I currently work on the software production and development team at HyreCar, Inc.
                             </p>
                             <div className="ul-container">
                                 <ul className="text-white text-med text-center pt-10">
