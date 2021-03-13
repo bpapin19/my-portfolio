@@ -5,20 +5,20 @@ import image from "../city.jpg";
 export default function Contact() {
     return (
         <main className="relative">
-            <img src={image} alt="city" className="absolute w-full" />
+            <img src={image} alt="city" className="fixed w-full h-full" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-blue-100 rounded-lg shadow-3xl lg:flex p-20">
+                <section className="background border-2 border-white rounded-lg shadow-3xl lg:flex p-20">
                     <div className="text-lg flex flex-col justify-center">
-                        <h1 className="text text-4xl mb-4 text-bold py-3">
+                        <h1 className="text-white text-4xl mb-4 text-bold py-3">
                             Contact Information
                         </h1>
                         <div className="ml-10">
-                     <h2 className="font-bold">Email: </h2>
-                     <div>bmpapin@csu.fullerton.edu <br />bmpapin@yahoo.com </div>
+                     <h2 className="text-white font-bold">Email: </h2>
+                     <div className="text-white">bmpapin@csu.fullerton.edu <br />bmpapin@yahoo.com </div>
                  </div>
-                 <div className="ml-10">
+                 <div className="text-white ml-10">
                      <br />
-                     <h2 className="font-bold">Phone: </h2>
+                     <h2 className="text-white font-bold">Phone: </h2>
                     <div>(714) 328-6755</div>
                  </div>
                     </div>

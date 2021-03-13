@@ -2,6 +2,10 @@ import React, {useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import "./projectToolTips.css";
 import "./page.css";
+import image from "../city.jpg"
+import $ from "jquery";
+import "./NavBar.css";
+import { useLocation } from 'react-router-dom'
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -22,19 +26,28 @@ export default function Project() {
     .catch(console.error);
 }, []);
 
+$(window).scroll(function() {
+    "use strict";
+    var windowYmax = 1;
+    var scrolledY = $(window).scrollTop();
+      if (scrolledY > windowYmax) {
+       $('.navbar').addClass("hide-content2");
+      } else {
+       $('.navbar').removeClass("hide-content2");
+      }
+   });
+
     return (
-        
-        <main className="bg-blue-100 min-h-screen p-12">
-            {/* <div>Figuring out CORS error :( Links to projects are <br />https://bpapin19.github.io/algorithm-animation/ <br/>and<br/> https://bpapin19.github.io/covid19-tracker/ <br/>as well as on my github</div> */}
-            <section className="container mx-auto">
-                <h1 className="text text-5xl flex justify-center">My Projects</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12"></h2>
+        <main>
+            <img src={image} alt="CityScape" className="fixed w-full h-full"/>
+            <section className="container mx-auto py-20">
+                <h1 className="text-white text-5xl flex justify-center z-10">My Projects</h1>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && 
                     projectData.map((project, index) =>(
-                    <article className="relative rounded-lg shadow-xl bg-white p-16">
-                        <h3 className="projtooltip text text-3xl font-bold mb-2 hover:text-red-700">
-                            <span className="projtooltiptext text-sm">View Project in Browser</span>
+                    <article className="relative border-2 border-white rounded-lg shadow-xl background p-16">
+                        <h3 className="text-white projtooltip text-white text-3xl font-bold mb-2 hover:text-red-700">
+                            <span className="projtooltiptext text-white text-sm">View Project in Browser</span>
                             <a href={project.link}
                                 alt={project.title}
                                 target="_blank"
@@ -42,20 +55,20 @@ export default function Project() {
                             >
                                 {project.title}</a>
                         </h3>
-                        <div className="text-gray-500 text-xss space-x-4">
+                        <div className="text-white text-xss space-x-4">
                             <span>
-                                <strong className="font-bold">Finished on</strong>:{" "}
+                                <strong className="text-white font-bold">Finished on</strong>:{" "}
                                 {new Date(project.date).toLocaleDateString()}
                             </span>
                             <span>
-                                <strong className="font-bold">Company</strong>:{" "}
+                                <strong className="text-white font-bold">Company</strong>:{" "}
                                 {project.place}
                             </span>
                             <span>
-                                <strong className="font-bold">Type</strong>:{" "}
+                                <strong className="text-white font-bold">Type</strong>:{" "}
                                 {project.projectType}
                             </span>
-                            <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                            <p className="my-6 text-lg text-white leading-relaxed">
                                 {project.description}
                             </p>
                             <a 

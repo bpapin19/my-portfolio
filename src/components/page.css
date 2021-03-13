@@ -1,3 +1,40 @@
-.text {
-    color: rgb(25, 20, 52);
+.show {
+    z-index: -1;
 }
+
+.title {
+    margin: auto;
+    padding: 10px;
+}
+
+.background {
+    background-color: rgb(19, 10, 11);
+}
+
+.home-font {
+    color: rgb(20, 25, 57);
+}
+
+.icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  position: relative;
+  left: 38%;
+  color: white;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.li-space {
+    margin: 0 0 15px 0;
+}
+
+.panel-color {
+    background-color: rgb(20, 25, 57);
+}
+

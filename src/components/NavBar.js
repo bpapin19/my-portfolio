@@ -2,20 +2,31 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import './NavBar.css';
+import logo from "../bp.png";
+
+import image from "../cityscape.jpg";
+import { findAllByTitle } from "@testing-library/react";
 
 export default function NavBar() {
   return (
-    <header className="navbar">
-      <div className="container mx-auto flex justify-between">
+    <header className="navbar pin">
+      <div className="container mx-auto flex">
+        <div className="container mx-auto flex justify-between">
         <nav className="flex">
+          <NavLink to="/">
+          
+          </NavLink>
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-white text-4xl font-bold"
+            className="inflex-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-white text-4xl font-bold title"
           >
+            <img alt="logo" className="logo"/>
+            <div className="text">
             Brandon Papin
-            <div className="inflex-flex items-center text-white text-sm font-bold">Web Developer Student</div>
+            <div className="inflex-flex items-center text-sm font-bold title2">Web Developer Student</div>
+            </div>
           </NavLink>
           <NavLink
             to="/project"
@@ -47,7 +58,7 @@ export default function NavBar() {
                     classname="mr-4"
                     target="_blank"
                     fgColor="#fff"
-                    style={{ height: 35, width: 35 }}
+                    style={{ height: 35, width: 35}}
                 />
             </div>
             <div className="tooltip">
@@ -70,6 +81,7 @@ export default function NavBar() {
                 style={{ height: 35, width: 35 }}
             />
         </div>
+      </div>
       </div>
     </div>
     </header>
