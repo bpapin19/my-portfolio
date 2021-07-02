@@ -4,8 +4,8 @@
     visibility: hidden;
     width: 260px;
     color: white;
-    display: inline;
-    position: relative;
+    display: flex;
+    align-items: center;
     transition: opacity .25s;
    
     /* Position the tooltip text - see examples below! */

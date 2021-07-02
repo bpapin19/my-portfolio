@@ -7,8 +7,12 @@
     padding: 10px;
 }
 
+.green-font {
+    color: #51af7f;
+}
+
 .background {
-    background-color: rgb(19, 10, 11);
+    background-color: black;
 }
 
 .home-font {
@@ -20,7 +24,7 @@
   width: 4.5rem;
   position: relative;
   left: 38%;
-  color: white;
+  color: #51af7f;
 }
 
 .row {
@@ -35,6 +39,15 @@
 }
 
 .panel-color {
-    background-color: rgb(20, 25, 57);
+    background-color: black;
+    border-color: white;
+}
+
+.gray-text {
+    color: #9b9b9b;
+}
+
+.source-hover:hover {
+    color: #69d89f;
 }
 

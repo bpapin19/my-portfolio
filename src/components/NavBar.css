@@ -3,11 +3,11 @@
 }
 
 .hide-content1 {
-  background: transparent url('../cityscape.jpg') no-repeat top center fixed; background-size: cover;
+  background: transparent url('../black-background.jpeg') no-repeat top center fixed; background-size: cover;
 }
 
 .hide-content2{ 
-  background: transparent url('../city.jpg') no-repeat top center fixed; background-size: cover;
+  background: transparent url('../black-background.jpeg') no-repeat top center fixed; background-size: cover;
 }
 
 .pin {
@@ -53,11 +53,16 @@
   visibility: visible;
 }
 
-.title:hover .title2 { color: white; }
+.title:hover .title2 { color: #51af7f; }
 
+.title2 { color: #9b9b9b; }
 
 .title:hover .logo {
   content :url("../bp-hover.png");
+}
+
+.nav-hover:hover {
+  color: #51af7f;
 }
 
 .text {
@@ -68,4 +73,8 @@
 .logo{
   content :url("../bp.png");
   float: left;
+}
+
+.green-text {
+  color: #51af7f;
 }

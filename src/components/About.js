@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import image from "../city.jpg";
+import image from "../black-background.jpeg";
 import userImage from "../userImage.jpg";
 import "./page.css";
 
@@ -13,14 +13,12 @@ export default function About() {
                     <img src={userImage} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt="Brandon Papin"/>
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="text-white text-4xl mb-4 text-bold py-3">
-                            Hi. My name is Brandon Papin.
+                            Hi! I'm Brandon.
                         </h1>
                             <div>
                                 <p className="text-white text-med">
-                                    I am a senior at Cal State Fullerton majoring in Computer Science with a focus in software engineering,
-                                    and will be able to work full time starting fall as I only need 2 more classes to graduate with a Bachelor's.
-                                    I have one year of experience as a QA Tester and Web Developer Intern at Hyrecar based on Los Angeles.
-                                    In my free time, I enjoy skateboarding, photography, making beats, and coding personal projects. 
+                                    I am a senior at Cal State Fullerton majoring in Computer Science with a focus in web development.
+                                    I come from Yorba Linda, California, and in my free time I enjoy skateboarding, photography, making beats, and coding personal projects. 
                                     I consider myself a social person who is easy to get along with and can work well among a team.
                                 </p>
                             </div>

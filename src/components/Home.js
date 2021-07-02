@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../cityscape.jpg";
+import image from "../black-background.jpeg";
 import "./page.css";
 import $ from "jquery";
 import { FaFileCode } from 'react-icons/fa';
@@ -22,12 +22,12 @@ export default function Home() {
         <main>
             <img src={image} alt="CityScape" className="fixed w-full show"/>
             <section className="relative flex justify-center min-h-screen">
-                <h1 className="text-blue-100 font-extra-bold home-name title">
+                <h1 className="green-font font-extra-bold home-name title">
                     Hi. I'm Brandon.
                 </h1>
             </section>
             <div className="p-10 lg:pt-48 container mx-auto row">
-                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 border-white">
+                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4">
                     <div className="text-lg justify-center">
                     <div className="iconContainer">
                         <FaFileCode className="icon"/>
@@ -36,25 +36,25 @@ export default function Home() {
                             Web Developer
                         </h1>
                         <div>
-                            <p className="text-blue-100 text-med text-center">
+                            <p className="gray-text text-med text-center">
                                 My passion is programming web applications and learning new techniques along the way.
                             </p>
                             <div className="ul-container">
-                                <ul className="text-blue-100 text-med text-center pt-10">
+                                <ul className="text-med text-center pt-10">
                                     <h1 className="text-white"><b>Languages/Frameworks:</b></h1>
-                                    <li className="text-blue-100">Javascript</li>
-                                    <li className="text-blue-100">React.js</li>
-                                    <li className="text-blue-100">JQuery</li>
-                                    <li className="text-blue-100">HTML5</li>
-                                    <li className="text-blue-100">CSS</li>
-                                    <li className="text-blue-100">Bootstrap</li>
-                                    <li className="text-blue-100">PHP</li>
+                                    <li className="gray-text">Javascript</li>
+                                    <li className="gray-text">React.js</li>
+                                    <li className="gray-text">JQuery</li>
+                                    <li className="gray-text">HTML5</li>
+                                    <li className="gray-text">CSS</li>
+                                    <li className="gray-text">Bootstrap</li>
+                                    <li className="gray-text">PHP</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 border-white">
+                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4">
                     <div className="text-lg justify-center">
                         <div className="iconContainer">
                             <FaLaptopCode className="icon"/>
@@ -63,19 +63,19 @@ export default function Home() {
                                 Student
                             </h1>
                             <div>
-                                <p className="text-blue-100 text-med text-center">
+                                <p className="gray-text text-med text-center">
                                     I will be graduating with a bachelor's degree in Computer Science in Fall 2021. 
                                 </p>
                                 <div className="ul-container">
                                     <ul className="text-white text-med text-center pt-10">
                                         <h1 className="text-white"><b>Classes Completed:</b></h1>
-                                        <li className="text-blue-100">Front End Web Development</li>
-                                        <li className="text-blue-100">Back End Web Engineering</li>
-                                        <li className="text-blue-100">Databases and Applications</li>
-                                        <li className="text-blue-100">Algorithms</li>
-                                        <li className="text-blue-100">Python Programming</li>
-                                        <li className="text-blue-100">AI & Machine Learning</li>
-                                        <li className="text-blue-100">Data Structures</li>
+                                        <li className="gray-text">Front End Web Development</li>
+                                        <li className="gray-text">Back End Web Engineering</li>
+                                        <li className="gray-text">Databases and Applications</li>
+                                        <li className="gray-text">Algorithms</li>
+                                        <li className="gray-text">Python Programming</li>
+                                        <li className="gray-text">AI & Machine Learning</li>
+                                        <li className="gray-text">Data Structures</li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,18 +87,18 @@ export default function Home() {
                         <FaClipboardCheck className="icon"/>
                     </div>
                         <h1 className="text-white text-4xl mb-4 text-bold py-3 text-center">
-                            QA Tester
+                            Web Dev Intern
                         </h1>
                         <div>
-                            <p className="text-blue-100 text-med text-center">
-                                I currently work on the software production and development team at HyreCar, Inc.
+                            <p className="gray-text text-med text-center">
+                                I interned for 8 months on the software production and development team at HyreCar, Inc.
                             </p>
                             <div className="ul-container">
                                 <ul className="text-white text-med text-center pt-10">
                                     <h1 className="text-white"><b>Duties Performed:</b></h1>
-                                    <li className="text-blue-100 li-space">Pull files from codebase and ensure all tests pass</li>
-                                    <li className="text-blue-100 li-space">Refactor code to find bugs/errors if tests failed</li>
-                                    <li className="text-blue-100 li-space">Update product stories with test results</li>
+                                    <li className="gray-text li-space">Implemented front end features that work collaboratively with our back end system</li>
+                                    <li className="gray-text li-space">Performed unit-testing on new features</li>
+                                    <li className="gray-text li-space">Participated in pair programming and code reviews</li>
                                 </ul>
                             </div>
                         </div>

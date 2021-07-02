@@ -2,7 +2,7 @@ import React, {useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import "./projectToolTips.css";
 import "./page.css";
-import image from "../city.jpg"
+import image from "../black-background.jpeg"
 import $ from "jquery";
 import "./NavBar.css";
 import { useLocation } from 'react-router-dom'
@@ -46,8 +46,8 @@ $(window).scroll(function() {
                     {projectData && 
                     projectData.map((project, index) =>(
                     <article className="relative border-2 border-white rounded-lg shadow-xl background p-16">
-                        <h3 className="text-white projtooltip text-white text-3xl font-bold mb-2 hover:text-red-700">
-                            <span className="projtooltiptext text-white text-sm">View Project in Browser</span>
+                        <h3 className="text-white projtooltip text-white text-3xl font-bold mb-2 nav-hover">
+                            <div className="projtooltiptext text-white text-sm">View Project in Browser</div>
                             <a href={project.link}
                                 alt={project.title}
                                 target="_blank"
@@ -56,15 +56,15 @@ $(window).scroll(function() {
                                 {project.title}</a>
                         </h3>
                         <div className="text-white text-xss space-x-4">
-                            <span>
+                            <span className="gray-text">
                                 <strong className="text-white font-bold">Finished on</strong>:{" "}
                                 {new Date(project.date).toLocaleDateString()}
                             </span>
-                            <span>
+                            <span className="gray-text">
                                 <strong className="text-white font-bold">Company</strong>:{" "}
                                 {project.place}
                             </span>
-                            <span>
+                            <span className="gray-text">
                                 <strong className="text-white font-bold">Type</strong>:{" "}
                                 {project.projectType}
                             </span>
@@ -75,7 +75,7 @@ $(window).scroll(function() {
                             href={project.sourceLink} 
                             rel="noopener noreferer" 
                             target="_blank" 
-                            className="text-red-500 font-bold hover:underline hover:text-red-400"
+                            className="green-text font-bold hover:underline source-hover"
                             >
                                 View The Source Code{" "}
                                 <span role="img" aria-label="right pointer">

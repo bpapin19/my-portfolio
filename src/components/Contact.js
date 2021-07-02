@@ -1,6 +1,6 @@
 import React from "react";
 import "./page.css";
-import image from "../city.jpg";
+import image from "../black-background.jpeg";
 
 export default function Contact() {
     return (
