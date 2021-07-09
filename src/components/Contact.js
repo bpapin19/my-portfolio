@@ -1,11 +1,9 @@
 import React from "react";
 import "./page.css";
-import image from "../black-background.jpeg";
 
 export default function Contact() {
     return (
         <main className="relative">
-            <img src={image} alt="city" className="fixed w-full h-full" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="background border-2 border-white rounded-lg shadow-3xl lg:flex p-20">
                     <div className="text-lg flex flex-col justify-center">

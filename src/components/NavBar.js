@@ -2,17 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import './NavBar.css';
-import logo from "../bp.png";
-
-import image from "../cityscape.jpg";
-import { findAllByTitle } from "@testing-library/react";
 
 export default function NavBar() {
   return (
     <header className="navbar pin">
       <div className="container mx-auto flex">
         <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+        <nav className="flex left-nav">
           <NavLink
             to="/"
             exact
@@ -20,29 +16,29 @@ export default function NavBar() {
             className="inflex-flex items-center py-6 px-3 mr-4 text-white text-4xl font-bold title"
           >
             <img alt="logo" className="logo"/>
-            <div className="text">
+            <div className="title">
             Brandon Papin
-            <div className="inflex-flex items-center text-sm font-bold title2">Web Developer Student</div>
+            <div className="inflex-flex items-center text-sm font-bold subtitle">Web Developer Student</div>
             </div>
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="green-text"
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
+            className="navlink-item inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="green-text"
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
+            className="navlink-item inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
           >
             About Me
           </NavLink>
           <NavLink
             to="/contact"
             activeClassName="green-text"
-            className="inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
+            className="navlink-item inflex-flex items-center py-3 px-3 my-6 rounded text-white nav-hover"
           >
             Contact
           </NavLink>

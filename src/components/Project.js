@@ -2,10 +2,7 @@ import React, {useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import "./projectToolTips.css";
 import "./page.css";
-import image from "../black-background.jpeg"
-import $ from "jquery";
 import "./NavBar.css";
-import { useLocation } from 'react-router-dom'
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -26,22 +23,10 @@ export default function Project() {
     .catch(console.error);
 }, []);
 
-$(window).scroll(function() {
-    "use strict";
-    var windowYmax = 1;
-    var scrolledY = $(window).scrollTop();
-      if (scrolledY > windowYmax) {
-       $('.navbar').addClass("hide-content2");
-      } else {
-       $('.navbar').removeClass("hide-content2");
-      }
-   });
-
     return (
         <main>
-            <img src={image} alt="CityScape" className="fixed w-full h-full"/>
             <section className="container mx-auto py-20">
-                <h1 className="text-white text-5xl flex justify-center z-10">My Projects</h1>
+                <h1 className="text-white text-5xl flex justify-center m-8">My Projects</h1>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && 
                     projectData.map((project, index) =>(
@@ -72,9 +57,9 @@ $(window).scroll(function() {
                                 {project.description}
                             </p>
                             <a 
-                            href={project.sourceLink} 
+                            href={project.sourceLink}
+                            target="_blank"
                             rel="noopener noreferer" 
-                            target="_blank" 
                             className="green-text font-bold hover:underline source-hover"
                             >
                                 View The Source Code{" "}

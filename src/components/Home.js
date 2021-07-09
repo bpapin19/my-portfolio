@@ -1,32 +1,23 @@
 import React from "react";
-import image from "../black-background.jpeg";
 import "./page.css";
-import $ from "jquery";
 import { FaFileCode } from 'react-icons/fa';
 import { FaLaptopCode } from 'react-icons/fa';
 import { FaClipboardCheck } from 'react-icons/fa';
 
 export default function Home() {
-    $(window).scroll(function() {
-        "use strict";
-        var windowYmax = 1;
-        var scrolledY = $(window).scrollTop();
-          if (scrolledY > windowYmax) {
-            $('.navbar').removeClass("hide-content2");
-           $('.navbar').addClass("hide-content1");
-          } else {
-           $('.navbar').removeClass("hide-content1");
-          }
-       });
+    
     return (
         <main>
-            <img src={image} alt="CityScape" className="fixed w-full show"/>
-            <section className="relative flex justify-center min-h-screen">
-                <h1 className="green-font font-extra-bold home-name title">
-                    Hi. I'm Brandon.
+            <div className="home-container">
+                <h1 className="text-white font-extra-bold home-name heading">
+                    Hi. I'm <span className="green-text">Brandon. </span>
                 </h1>
-            </section>
-            <div className="p-10 lg:pt-48 container mx-auto row">
+                <p className="gray-text subheading">
+                    A computer science student from Orange County, CA. 
+                    I aim to further my understanding of programming and product development.
+                </p>
+            </div>
+            <div className="home-cards p-10 lg:pt-48 container mx-auto row">
                 <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4">
                     <div className="text-lg justify-center">
                     <div className="iconContainer">
