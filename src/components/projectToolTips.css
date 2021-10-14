@@ -20,3 +20,10 @@
     opacity: 1;
     visibility: visible;
   }
+
+  @media (max-width: 800px) {
+    .projtooltip:hover .projtooltiptext {
+      opacity: 1;
+      visibility: hidden;
+    }
+  }

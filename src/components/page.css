@@ -5,7 +5,7 @@
 .heading {
     margin: auto;
     padding-top: 10vw;
-    font-size: 10vw;
+    font-size: 90px;
 }
 
 .home-container {
@@ -22,12 +22,6 @@
     font-size: 20px;
     text-align: center;
     padding-bottom: 5vw;
-}
-
-@media only screen and (max-width: 600px) {
-    .subheading {
-        font-size: 12px;
-    }
 }
 
 .green-text {
@@ -57,10 +51,35 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 1048px) {
+@media (max-width: 800px) {
     .home-cards {
         display: block;
-        text-align:center;
+        text-align: center;
+    }
+
+    .home-card {
+        margin: auto;
+    }
+
+    .grid {
+        display: block;
+        text-align: center;
+    }
+
+    .article {
+        margin: 15px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .about, .contact {
+        margin-top: 75px
     }
 }
 

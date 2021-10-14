@@ -30,7 +30,7 @@ export default function Project() {
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && 
                     projectData.map((project, index) =>(
-                    <article className="relative border-2 border-white rounded-lg shadow-xl background p-16">
+                    <article className="relative border-2 border-white rounded-lg shadow-xl background p-16 article">
                         <h3 className="text-white projtooltip text-white text-3xl font-bold mb-2 nav-hover">
                             <div className="projtooltiptext text-white text-sm">View Project in Browser</div>
                             <a href={project.link}

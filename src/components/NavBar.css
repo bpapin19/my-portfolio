@@ -20,13 +20,6 @@
   width: 70px;
 }
 
-@media only screen and (max-width: 600px) {
-  .logo {
-    height: 30px;
-    width: 35px;
-  }
-}
-
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -79,9 +72,49 @@
   float: left;
 }
 
-.navlink-item {
+.nav-text {
+  margin: auto;
+}
+
+.mobile-logo {
+  display: none;
+  width: 50px;
+  margin: 0;
+  position: relative;
 }
 
 .green-text {
   color: #51af7f;
+}
+
+@media (max-width: 600px) {
+  .subtitle, .title {
+    display: none
+  }
+
+  .navlink-item {
+    font-size: 15px;
+  }
+
+  .mobile-logo {
+    display: inline;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .container {
+    height: 60px
+  }
+
+  .mobile-logo-container {
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .icons {
+    margin: auto;
+  }
+
 }

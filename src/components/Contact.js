@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <main className="relative">
             <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="background border-2 border-white rounded-lg shadow-3xl lg:flex p-20">
+                <section className="background border-2 border-white rounded-lg shadow-3xl lg:flex p-20 contact">
                     <div className="text-lg flex flex-col justify-center">
                         <h1 className="text-white text-4xl mb-4 text-bold py-3">
                             Contact Information

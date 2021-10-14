@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main>
             <div className="home-container">
-                <h1 className="text-white font-extra-bold home-name heading">
+                <h1 className="text-white heading">
                     Hi. I'm <span className="green-text">Brandon. </span>
                 </h1>
                 <p className="gray-text subheading">
@@ -18,7 +18,7 @@ export default function Home() {
                 </p>
             </div>
             <div className="home-cards p-10 lg:pt-48 container mx-auto row">
-                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4">
+                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 home-card">
                     <div className="text-lg justify-center">
                     <div className="iconContainer">
                         <FaFileCode className="icon"/>
@@ -45,7 +45,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4">
+                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 home-card">
                     <div className="text-lg justify-center">
                         <div className="iconContainer">
                             <FaLaptopCode className="icon"/>
@@ -72,7 +72,7 @@ export default function Home() {
                             </div>
                         </div>
                 </section>
-                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 border-white">
+                <section className="panel-color rounded-3xl shadow-3xl w-96 p-10 border-4 border-white home-card">
                     <div className="text-lg justify-center">
                     <div className="iconContainer">
                         <FaClipboardCheck className="icon"/>
