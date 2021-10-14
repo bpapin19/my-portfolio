@@ -55,6 +55,7 @@
     .home-cards {
         display: block;
         text-align: center;
+        margin: auto;
     }
 
     .home-card {
@@ -63,7 +64,6 @@
 
     .grid {
         display: block;
-        text-align: center;
     }
 
     .article {
